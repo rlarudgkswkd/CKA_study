@@ -14,3 +14,11 @@
   - Exam Curriculum (Topics): https://github.com/cncf/curriculum
   - Candidate Handbook: https://www.cncf.io/certification/candidate-handbook
   - Exam Tips: http://training.linuxfoundation.org/go//Important-Tips-CKA-CKAD
+
+## 쿠버네티스
+- application
+- loadbalnacer
+- container
+- storage and so on
+
+- license : CKA, CKD
