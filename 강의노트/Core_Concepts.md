@@ -7,3 +7,4 @@
 - ETCD Cluster
 - Kube-scheduler
 - Controller-Manager
+- kube-proxy
