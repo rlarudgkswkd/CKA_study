@@ -8,3 +8,8 @@
 - Kube-scheduler
 - Controller-Manager
 - kube-proxy
+
+## ETCD
+- 버전이 2개 지원
+    - 꼭 버전 확인하고 하셈
+    - version 2,3 두개 존재
