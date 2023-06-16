@@ -27,3 +27,8 @@
 - 클러스터 -> Node -> Pod 단위로 진행
 - k8s 클러스터 -> Single Node -> Single Pod 환경
 ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/fd2e74ca-fba0-43b1-b2b3-c25d2dc9d875)
+- 도커 컨테이너
+    - Single Node 에서 여러개의 컨테이너를 실행 하게 됌.
+    - 그리고 컨테이너에 해당하는 helper 컨테이너를 실행하게됨 1:1 매칭으로
+    - 그리고 매핑을 관리함. 이런 환경에서는 사용자가 알아서 해야하는데
+    - Helper 와 App 컨테이너를 pod 단위로 묶어서 관리하면 편해짐. 장기적으로 좋음
