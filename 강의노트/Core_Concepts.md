@@ -26,3 +26,4 @@
 ## Recap - Pods
 - 클러스터 -> Node -> Pod 단위로 진행
 - k8s 클러스터 -> Single Node -> Single Pod 환경
+![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/fd2e74ca-fba0-43b1-b2b3-c25d2dc9d875)
