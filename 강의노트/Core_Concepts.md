@@ -55,7 +55,13 @@
 - 파드를 yaml로 생성할거임.
 - 여러 편집기로 생성 가능
 
-
+## Practice Test - Pods
+- 링크 : https://kodekloud.com/topic/practice-test-pods-2/
+```
+kubectl get pods
+kubectl get pods -o wide
+kubectl describe pods/webapp
+kubectl run nginx --image=nginx
 
 
 
