@@ -70,6 +70,8 @@ newpods-m5zvc   1/1     Running            0          15m
 newpods-kwgwr   1/1     Running            0          15m
 webapp          1/2     ImagePullBackOff   0          10m
 -> 여기서 1/1 , 1/2 은 running 중인 컨테이너/전체 컨테이너 수 임
+
+kubectl delete pods/webapp //webapp이라는 이름의 pod를 삭제함
 ```
 
 
