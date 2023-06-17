@@ -35,3 +35,6 @@
 - Pod Deployment
     - kubectl run nginx : 이미지는 어디서 얻음? -> Docker Hub repo 에서 가져옴
     - 상태 확인 : kubectl get pods -> 여기 까지는 외부 사용자가 접근할수 없는 상황. (추후 네트워킹 까지 진행)
+ 
+## Pods with YAML
+- YAML in Kubernetes : yaml을 복제본, 배포 등 생성을 위한 입력으로 사용
