@@ -42,12 +42,15 @@
 - apiVersion : 버전
 - kind : pod
 - metadata : 이름이나 라벨 같은거
-    - name : 
-    - labels : 라벨링 해서 필터링을 하기 위함 key value 값
-    -     app : myapp
-    -     type : front-end
+ - name  :
+ - labels : 라벨링 해서 필터링을 하기 위함 key value 값
+    - app : myapp
+    - type : front-end
 - spec
-![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/7a0a63d3-dce8-470a-a6b8-b0f402e859fb)
+ - containers
+ - etc 
+![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/80434e58-22d0-4c09-951f-e196407b938b)
+
 
 
 
