@@ -75,6 +75,7 @@ kubectl delete pods/webapp //webapp이라는 이름의 pod를 삭제함
 ```
 
 - pod-definition.yaml로 pod 생성
+  - 참고링크 : https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/
   ```
 apiVersion: v1
 kind: Pod
