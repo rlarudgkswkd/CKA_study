@@ -39,3 +39,14 @@
 ## Pods with YAML
 - YAML in Kubernetes : yaml을 복제본, 배포 등 생성을 위한 입력으로 사용
 - 4개의 TOP 레벨 : apiVersion, kind, metadata, spec -> 이거 필수
+- apiVersion : 버전
+- kind : pod
+- metadata : 이름이나 라벨 같은거
+- spec
+![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/7a0a63d3-dce8-470a-a6b8-b0f402e859fb)
+
+
+
+
+
+
