@@ -51,7 +51,9 @@
  - etc 
 ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/80434e58-22d0-4c09-951f-e196407b938b)
 
-
+## Demo - Pods with YAML
+- 파드를 yaml로 생성할거임.
+- 여러 편집기로 생성 가능
 
 
 
