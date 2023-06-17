@@ -74,5 +74,22 @@ webapp          1/2     ImagePullBackOff   0          10m
 kubectl delete pods/webapp //webapp이라는 이름의 pod를 삭제함
 ```
 
-
+- pod-definition.yaml로 pod 생성
+  ```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis
+spec:
+  containers:
+  - name: redis
+    image: redis123
+    volumeMounts:
+    - name: redis-storage
+      mountPath: /data/redis
+  volumes:
+  - name: redis-storage
+    emptyDir: {}
+  ```
+ - kubectl apply -f pod-definiton.yaml 로 실행
 
