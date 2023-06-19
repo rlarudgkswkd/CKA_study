@@ -92,5 +92,6 @@ spec:
   - name: redis-storage
     emptyDir: {}
   ```
- - kubectl apply -f pod-definiton.yaml 로 실행
+- kubectl apply -f pod-definiton.yaml 로 실행
+
 
