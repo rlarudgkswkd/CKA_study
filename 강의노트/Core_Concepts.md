@@ -77,7 +77,7 @@ kubectl delete pod webapp // 이렇게도 가능
 
 - pod-definition.yaml로 pod 생성
   - 참고링크 : https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/
-  ```
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -92,24 +92,25 @@ spec:
   volumes:
   - name: redis-storage
     emptyDir: {}
-  ```
+```
 
 - kubectl apply -f pod-definiton.yaml 로 실행
 - 다른 방식도 있음
-    ```
+```
     kubectl run redis --image=redis123 --dry-run -o yaml  // --dry-run 이 deprecated 됐다함.
     kubectl run redis --image=redis123 --dry-run=client -o yaml //정상 결과 출력
     kubectl run redis --image=redis123 --dry-run=client -o yaml > redis.yaml //파일로 만들기
     cat redis.yaml
     kubectl create -f redis.yaml
     kubectl get pods
-    ```
+```
 - 추가
-    ```
+  
+```
     cat redis.yaml
     vi redis.yaml -> redis123을 redis 로 변경 후 저장
     kubectl apply -f redis.yaml
-    ```
+```
 
 
 
