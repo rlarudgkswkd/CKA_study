@@ -72,6 +72,7 @@ webapp          1/2     ImagePullBackOff   0          10m
 -> 여기서 1/1 , 1/2 은 running 중인 컨테이너/전체 컨테이너 수 임
 
 kubectl delete pods/webapp //webapp이라는 이름의 pod를 삭제함
+kubectl delete pod webapp // 이렇게도 가능
 ```
 
 - pod-definition.yaml로 pod 생성
