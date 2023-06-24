@@ -120,5 +120,23 @@ spec:
 ### 필요이유2 : Load Balancing & Scaling
 - 여러개의 파드를 생성해서 로드가 공유되게 하려함.
 - 단일포드가 사용자 집합을 담당하다가 많아지면 여러개의 파드가 부하를 대응하게 만들어줌.
+### Replication Controller vs Replica Set
+- 두개는 다르나 앞서 언급한 두개의 동작을 다 할수있음
+- 요즘은 Replica Set으로 사용
+- rc-definition.yaml
+  ```
+  apiVersion : v1
+  kind :
+  metadata:
+      name: myapp-rc
+      labels:
+          app: myapp
+          type: front-end
+  spec :
+      template: {{pod-template 내용}} //기존 pod-definition.yaml의 metadata 애들을 자식으로 넣기
+  //위에 metadata는 replication controller를 위한거고 아래의 template 아래 metadata는 pod를 위한것.
+      replicas: 3          
+  ```
+  - kubectl create -f rc-definition.yaml // -f는 파일 파라미터
   
 
