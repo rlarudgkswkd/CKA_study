@@ -138,5 +138,24 @@ spec:
       replicas: 3          
   ```
   - kubectl create -f rc-definition.yaml // -f는 파일 파라미터
-  
+  - kubectl get replicationcontroller
+  - kubectl get pods
+
+## Replica Set
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+    name: myapp-replicaset
+    labels:
+        app: myapp
+        type: front-end
+spec:
+    template: {{pod-template 내용}}
+replicas: 3
+selector: //Replcation Controller와의 큰 차이, 이게 필요함, 어떤 파드가 아래있는지를 정의해야함. <U>!!여기 개념 잘 이해안됌.</U>
+    matchLabels:
+        type: front-end 
+        
+```
 
