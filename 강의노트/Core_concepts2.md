@@ -21,3 +21,6 @@ metadata
 ![Uploading image.png…]()
 - kubectl create -f deployment-definition.yml
 - kubectl get deployments -> 배포가 자동으로 Replicaset 을 형성
+
+### Commands
+- kubectl get all //전부다 볼수있는 명령어
