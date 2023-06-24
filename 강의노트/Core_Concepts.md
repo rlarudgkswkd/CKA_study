@@ -18,11 +18,17 @@
     - version 2,3 두개 존재
 - k8s 관련 정보를 저장함
 
+---
+
 ## 클러스터, 노드, 파드, 컨테이너
 - 링크 : https://eng-sohee.tistory.com/m/129
 
+---
+
 ## Kube-scheduler
 - 스케쥴링에 대해 구성하는 것 뿐이지 실제로 pod를 옮기고 적재하고 이런 action을 하지는 않음. action은 kubelet
+
+---
 
 ## Recap - Pods
 - 클러스터 -> Node -> Pod 단위로 진행
@@ -36,7 +42,9 @@
 - Pod Deployment
     - kubectl run nginx : 이미지는 어디서 얻음? -> Docker Hub repo 에서 가져옴
     - 상태 확인 : kubectl get pods -> 여기 까지는 외부 사용자가 접근할수 없는 상황. (추후 네트워킹 까지 진행)
- 
+
+---
+
 ## Pods with YAML
 - YAML in Kubernetes : yaml을 복제본, 배포 등 생성을 위한 입력으로 사용
 - 4개의 TOP 레벨 : apiVersion, kind, metadata, spec -> 이거 필수
@@ -52,9 +60,13 @@
  - etc 
 ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/80434e58-22d0-4c09-951f-e196407b938b)
 
+---
+
 ## Demo - Pods with YAML
 - 파드를 yaml로 생성할거임.
 - 여러 편집기로 생성 가능
+
+---
 
 ## Practice Test - Pods
 - 링크 : https://kodekloud.com/topic/practice-test-pods-2/
@@ -113,7 +125,9 @@ spec:
     kubectl apply -f redis.yaml
 ```
 
-## Replication Controller
+---
+
+## Replication Controller & Replica Set
 - 왜 필요한지?
   - 응용프로그램을 실행하는 싱글 노드와 파드 있을때 파드의 문제가 생김 그러면 유저의 사용에 지장이 없게 그대로 실행되게 해야함. 복제품을 생성 시켜주는 것이 Replication Controller
 ### 필요이유1 : High Availability
@@ -142,7 +156,7 @@ spec:
   - kubectl get replicationcontroller
   - kubectl get pods
 
-## Replica Set
+### Replica Set
 ```
 apiVersion: apps/v1
 kind: ReplicaSet
@@ -164,22 +178,25 @@ selector: //Replcation Controller와의 큰 차이, 이게 필요함, 어떤 파
 - kubectl get replicaset
 - kubectl get pods
 
-## Labels and Selectors
+### Labels and Selectors
 - 왜 k8s는 label이랑 selector를 쓸까?
 - 수십개의 파드들 중에 관리하기 위해서 selector를 사용 그래서 matchLabels 사용
 - 구조 : 템플릿, 복제본, 선택기
 
-## Scale
+### Scale
 - 3개로 정의 했는데 만약 6개로 넘기고 싶으면?
 - definition 파일을 수정 : 6개로
 - kubectl replace -f replicaset-definiton.yml
 - kubectl scale --replicas=6 -f replicaset-definition.yml //방식1
 - kubectl scale --replicas=6 replicaset myapp-replicaset //방식2
 
-## Commands
+### Commands
 - kubectl create -f replicatset-definition.yml
 - kubectl get replicaset
 - kubectl delete replicaset myapp-replicaset
 - kubectl replace -f replicaset-definition.yml
 - kubectl scale --replicas=6 -f replicaset-definition.yml 
+
+---
+
 
