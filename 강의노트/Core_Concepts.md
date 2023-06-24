@@ -159,4 +159,11 @@ selector: //Replcation Controller와의 큰 차이, 이게 필요함, 어떤 파
         type: front-end 
         
 ```
+- kubectl create -f replicaset-definition.yml
+- kubectl get replicaset
+- kubectl get pods
+
+  ## Labels and Selectors
+  - 왜 k8s는 label이랑 selector를 쓸까?
+  - 수십개의 파드들 중에 관리하기 위해서 selector를 사용 그래서 matchLabels 사용
 
