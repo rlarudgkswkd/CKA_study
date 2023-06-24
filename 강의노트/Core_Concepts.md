@@ -175,3 +175,10 @@ selector: //Replcation Controller와의 큰 차이, 이게 필요함, 어떤 파
 - kubectl scale --replicas=6 -f replicaset-definition.yml //방식1
 - kubectl scale --replicas=6 replicaset myapp-replicaset //방식2
 
+## Commands
+- kubectl create -f replicatset-definition.yml
+- kubectl get replicaset
+- kubectl delete replicaset myapp-replicaset
+- kubectl replace -f replicaset-definition.yml
+- kubectl scale --replicas=6 -f replicaset-definition.yml 
+
