@@ -153,7 +153,8 @@ metadata:
 spec:
     template: {{pod-template 내용}}
 replicas: 3
-selector: //Replcation Controller와의 큰 차이, 이게 필요함, 어떤 파드가 아래있는지를 정의해야함. <U>!!여기 개념 잘 이해안됌.</U>
+selector: //Replcation Controller와의 큰 차이, 이게 필요함, 어떤 파드가 아래있는지를 정의해야함.
+        //<U>!!여기 개념 잘 이해안됌.</U>
     matchLabels:
         type: front-end 
         
