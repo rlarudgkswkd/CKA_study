@@ -200,6 +200,7 @@ selector: //Replcation Controller와의 큰 차이, 이게 필요함, 어떤 파
 ### Practice Test
 - kubectl edit replicaset {{replicaset name}} // 수정하는 키워드
 - kubectl scale --replicas=5 replicaset new-replica-set // replicaset scale
+- kubectl scale --replicas=7 replicaset new-replica-set // replicaset scale 7
 
 ---
 
