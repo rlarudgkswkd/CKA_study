@@ -10,6 +10,7 @@
 - Controller-Manager
 - kube-proxy
 
+---
 
 ## ETCD
 - 버전이 2개 지원
