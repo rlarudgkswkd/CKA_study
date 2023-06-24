@@ -163,7 +163,15 @@ selector: //Replcation Controller와의 큰 차이, 이게 필요함, 어떤 파
 - kubectl get replicaset
 - kubectl get pods
 
-  ## Labels and Selectors
-  - 왜 k8s는 label이랑 selector를 쓸까?
-  - 수십개의 파드들 중에 관리하기 위해서 selector를 사용 그래서 matchLabels 사용
+## Labels and Selectors
+- 왜 k8s는 label이랑 selector를 쓸까?
+- 수십개의 파드들 중에 관리하기 위해서 selector를 사용 그래서 matchLabels 사용
+- 구조 : 템플릿, 복제본, 선택기
+
+## Scale
+- 3개로 정의 했는데 만약 6개로 넘기고 싶으면?
+- definition 파일을 수정 : 6개로
+- kubectl replace -f replicaset-definiton.yml
+- kubectl scale --replicas=6 -f replicaset-definition.yml //방식1
+- kubectl scale --replicas=6 replicaset myapp-replicaset //방식2
 
