@@ -64,3 +64,5 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
 
 ---
 
+### Practical Tests
+- vim  deployment.yaml
