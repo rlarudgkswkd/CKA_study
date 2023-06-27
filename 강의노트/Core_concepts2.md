@@ -125,3 +125,7 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
   - kubectl create -f service-efinition.yaml
   - kubectl get services
   - curl http://192.168.1.2:30008
+- Pod 가  여러개일 경우?
+  - selector와 label을 같은 이름으로 지정하기.
+- 여러개의 노드일 경우
+  - 서비스로 다 묶고 같은 포트로 ip만 다르게 통신가능함.
