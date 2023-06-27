@@ -71,3 +71,17 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
 - kubectl create deployment --help : 해당 명령어로 도움 받을수 있음
 - 특정 이미지로 Deployment 생성 : yaml 파일을 수정해서 해도되지만 다른 명령어로도 가능
   - kubectl create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3
+
+
+## Services
+- 서비스는 애플리케이션 안밖의 각종 통신과 연결을 도와줌.
+- 프론트, 백엔드, DB 그룹이 있다고 함. 각 사이에연결을 담당함.
+- 192.168.1.2 node 가 있고 안에 네트워크는 10.244.0.0 pod는 10.244.0.2
+  - 외부 접속을 위해서 무엇인가 필요
+  - 여기에서 service가 필요 nodeport
+
+### Service Types
+- NodePort : 노드 내부에 포트로 접속하기 위한것.
+- ClusterIp : 가상 ip를 만들어서 서비스 간의 통신이 가능하게 해줌.
+- Load Balancer : 부하 분산기를 프로비전
+
