@@ -16,7 +16,7 @@ kind: Deployment
 metadata
 .
 .
-
+.
 .
 ```
 ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/22fa122c-508f-45fd-8e41-806c59d4cbb0)
