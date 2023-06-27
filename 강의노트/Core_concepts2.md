@@ -91,4 +91,19 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
 - Load Balancer : 부하 분산기를 프로비전
 
 ### NodePort
-- 
+- Port
+- TargetPort
+- NodePort range : 30000 - 32767
+  ```
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: myapp-service
+  spec:
+    type: NodePort
+    ports:
+      - targetPort: 80
+        port: 80 //port 만 필수요소이고 나머지는 알아서 지정됌.
+        nodeport: 30008
+  ```
+  - 여기에는 어떤pod랑 연결하는지가 없음
