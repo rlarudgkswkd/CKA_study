@@ -129,3 +129,31 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
   - selector와 label을 같은 이름으로 지정하기.
 - 여러개의 노드일 경우
   - 서비스로 다 묶고 같은 포트로 ip만 다르게 통신가능함.
+
+---
+
+##  Services Cluster IP
+- 풀 스택 웹 호스팅은 각각 다른 포드가 있음
+	- 프론트, 백엔드, redis, 데이터 베이스
+	- 각각 내용들은 어떻게 통신할까? internal 소통으로만 처리 할수 없음.
+	- 누구에게 ip 를 줄지 이런것들을 어떻게 결정할까?
+	- 개별 인터페이스로 묶어서 처리가 가능함.	
+```
+apiVersion: v1
+kind: Service
+metadata: 
+	name: back-end
+spec:
+	type: ClusterIP
+	ports:
+		- targetPort: 80
+			port: 80
+	selector:
+		app: myapp
+		type: back-end
+```
+- kubectl create -f service-definition.yaml
+- kubectl get services
+  
+---
+
