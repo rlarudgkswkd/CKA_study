@@ -27,6 +27,8 @@ metadata
 ### Commands
 - kubectl get all //전부다 볼수있는 명령어
 
+----
+
 ## Tips!!
 - yaml 파일로 하려고 할때 어려움이 있음
 - 그냥 kubectl run 하고 {{이미지}}나 {{이름}} 이렇게 하면 도움을 줌.
@@ -64,14 +66,17 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
 
 ---
 
-### Practical Tests
+## Practical Tests
 - vim  deployment.yaml
 
-### Practice Tests Solution
+---
+
+## Practice Tests Solution
 - kubectl create deployment --help : 해당 명령어로 도움 받을수 있음
 - 특정 이미지로 Deployment 생성 : yaml 파일을 수정해서 해도되지만 다른 명령어로도 가능
   - kubectl create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3
 
+----
 
 ## Services
 - 서비스는 애플리케이션 안밖의 각종 통신과 연결을 도와줌.
@@ -85,3 +90,5 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
 - ClusterIp : 가상 ip를 만들어서 서비스 간의 통신이 가능하게 해줌.
 - Load Balancer : 부하 분산기를 프로비전
 
+### NodePort
+- 
