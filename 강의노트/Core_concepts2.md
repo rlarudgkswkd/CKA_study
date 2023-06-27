@@ -1,4 +1,4 @@
-# Core_concepts2 from Deployment
+# Core_concepts2
 
 ## Deployments
 - 여러개의 웹서버에 배포 되어야 하는 상황
