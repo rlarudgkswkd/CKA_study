@@ -106,4 +106,22 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
         port: 80 //port 만 필수요소이고 나머지는 알아서 지정됌.
         nodeport: 30008
   ```
-  - 여기에는 어떤pod랑 연결하는지가 없음
+  - 여기에는 어떤pod랑 연결하는지가 없음 -> 여기서 selector 사용
+  ```
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: myapp-service
+  spec:
+    type: NodePort
+    ports:
+      - targetPort: 80
+        port: 80 //port 만 필수요소이고 나머지는 알아서 지정됌.
+        nodeport: 30008
+    selector:
+      app: myapp
+      type: front-end
+  ```
+  - kubectl create -f service-efinition.yaml
+  - kubectl get services
+  - curl http://192.168.1.2:30008
