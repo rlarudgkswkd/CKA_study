@@ -66,3 +66,8 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
 
 ### Practical Tests
 - vim  deployment.yaml
+
+### Practice Tests Solution
+- kubectl create deployment --help : 해당 명령어로 도움 받을수 있음
+- 특정 이미지로 Deployment 생성 : yaml 파일을 수정해서 해도되지만 다른 명령어로도 가능
+  - kubectl create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3
