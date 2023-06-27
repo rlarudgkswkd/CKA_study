@@ -141,7 +141,7 @@ kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o y
 ```
 apiVersion: v1
 kind: Service
-metadata: 
+metadata:
 	name: back-end
 spec:
 	type: ClusterIP
@@ -157,3 +157,23 @@ spec:
   
 ---
 
+##  Services - Loadbalancer
+- 외부와 직면한 응용프로그램이 워커 노드를 사용하도록 도움.
+- http://example-vote.com 등의 도메인으로 한번에 접속하게하려면? 
+	- Load Balancer로 설정함.
+```
+apiVersion: v1
+kind: Service
+metadata:
+	name: myapp-service
+spec:
+	type: LoadBalancer //이거 내용만 추가하면됨.
+	ports:
+		- targetPort: 80
+			port: 80
+			nodePort: 30008
+```
+
+---
+
+## Practice Test - Services
