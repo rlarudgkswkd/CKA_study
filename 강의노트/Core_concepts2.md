@@ -179,4 +179,5 @@ spec:
 
 ## Practice Test - Services
 
-- 
+- 서비스를 통해 레이블과 selector로 진입점을 넣어주는것.
+- label을 만약 다르게 했을때는 어떻게됌.? 접속 안됌.
