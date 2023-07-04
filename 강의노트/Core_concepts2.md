@@ -201,3 +201,7 @@ spec:
 kubectl get pods
 kubectl get pods --namespace=kube-system //특정 네임스페이스에 접근하고 싶을때 사용
 ```
+
+### pod-definition.yml 파일로 별도 네임스페이스에 생성
+- kubectl create -f pod-definition.yml
+- kubectl create -f pod-definition.yml --namespace=dev
