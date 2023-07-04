@@ -196,3 +196,8 @@ spec:
 - 그리고 리소스 limits도 가능함.
 - 각각의 리소스들이 소통하기 위해 DNS 필요
   - mysql.connect("db-service.dev.svc.cluster.local")
+
+```
+kubectl get pods
+kubectl get pods --namespace=kube-system //특정 네임스페이스에 접근하고 싶을때 사용
+```
