@@ -203,5 +203,40 @@ kubectl get pods --namespace=kube-system //특정 네임스페이스에 접근�
 ```
 
 ### pod-definition.yml 파일로 별도 네임스페이스에 생성
-- kubectl create -f pod-definition.yml
-- kubectl create -f pod-definition.yml --namespace=dev
+```
+kubectl create -f pod-definition.yml
+kubectl create -f pod-definition.yml --namespace=dev
+```
+
+### Create Namespace
+- namespace-dev.yml
+```
+apiVersion: v1
+kind: Namespace
+metadata:
+	name: dev
+```
+- kubectl create -f namespace-dev.yml
+- kubectl create namespace dev
+
+### Switch
+- kubectl config set-context $(kubectl config current-context) --namespace=dev : 현재 네임 스페이스 설정하기
+- kubectl get pods
+
+### Resource Quota
+- spec 제한 하는것.
+- Compute-quota.yml
+```
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+	name: compute-quota
+	namespace: dev
+spec:
+	hard:
+		pods: "10"
+		requests.cpu: "4"
+		requests.memory: 5Gi
+		limits.cpu: "10"
+		limits.memory: 10Gi
+```
