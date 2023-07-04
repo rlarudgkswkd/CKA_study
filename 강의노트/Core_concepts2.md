@@ -192,3 +192,7 @@ spec:
 - 처음 우리가 할때 부터도 모든 리소스 생성은 default 네임스페이스에서 진행했음
 - 내부 목적을 위해 kube-system 이라는것 존재
 - kube-public : 모든 사용자가 사용할 리소스가 존재
+- 작은 단위의 규모로 응용하면 default에서 사용가능하지만 기업이나 배포를 위해서는 네임스페이스를 분리해야함. ex. Dev와 Prod
+- 그리고 리소스 limits도 가능함.
+- 각각의 리소스들이 소통하기 위해 DNS 필요
+  - mysql.connect("db-service.dev.svc.cluster.local")
