@@ -249,3 +249,5 @@ spec:
   ```
   What DNS name should the Blue application use to access the database db-service in the dev namespace?
   ```
+
+---
