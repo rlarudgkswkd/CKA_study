@@ -241,3 +241,6 @@ spec:
 		limits.cpu: "10"
 		limits.memory: 10Gi
 ```
+
+## Practice Test - Namespace
+- kubectl get pods --namespace=research // namespace 지정해서 pods 가져오기, 지정안하면 default로 가져옴.
