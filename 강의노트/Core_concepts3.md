@@ -20,5 +20,9 @@
     - kubectl delete -f nginx.yaml
 
 ### IaaC - Declarative
-- Declarative : yaml 파일에 다 정의함.
-  - kubectl apply -f nginx.yaml
+- Declarative : yaml 파일에 다 정의함. apply 사용
+  - Create Objects
+    - kubectl apply -f nginx.yaml
+    - kubectl apply -f /path/to/config-files
+  - Update Objects
+    - kubectl apply -f nginx.yaml
