@@ -1,6 +1,6 @@
 # Core Concepts3
 
-## Imperative vs Declarativ
+## Imperative vs Declarative
 - IaaC 에는 두개의 접근법이 있음
 - Imperative : 스탭별로 구성
 - Declarative : 목표를 먼저 정해줌. 시스템이 가는 경로를 알아서 찾아줌. what이 아닌 HOW TO DO임
