@@ -244,3 +244,4 @@ spec:
 
 ## Practice Test - Namespace
 - kubectl get pods --namespace=research // namespace 지정해서 pods 가져오기, 지정안하면 default로 가져옴.
+- kubectl get pod -A // namespace 조회하기 위해 사용했음
