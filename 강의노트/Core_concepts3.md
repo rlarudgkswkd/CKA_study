@@ -77,3 +77,4 @@ kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=cl
 ```
 
 ---
+
