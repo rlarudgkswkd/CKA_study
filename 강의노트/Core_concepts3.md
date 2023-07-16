@@ -95,4 +95,8 @@ kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=cl
 - kubectl create deployment redis-deploy --image=redis --replicas=2 -n dev-ns
 - kubectl run pod httpd --image=httpd:alpine --expose=true --port=80
 
+---
 
+## Kubectl Apply Command
+
+- 내부적으로 어떻게 작동하는지 보자
