@@ -5,6 +5,7 @@
 - Imperative : 스탭별로 구성
 - Declarative : 목표를 먼저 정해줌. 시스템이 가는 경로를 알아서 찾아줌. what이 아닌 HOW TO DO임
 
+
 ### IaaC - Imperative
 - Imperative : 서버 구성 요소를 다 작성함
   - Create Objects
