@@ -79,3 +79,16 @@ kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=cl
 
 ---
 
+## Practice Test - Imperative command
+
+- kubectl run nignx-pod --image=nginx:alpine
+- kubectl run redis --image=redis:alpine  --label="tier=db"
+- kubectl create service --help
+- kubectl create service clusterip --help
+- service 생성 2개 방법
+  - expose : kubectl expose pod nginx --type=NodePort --port=80
+  - create
+- kubectl expose pod redis --port 6379 --name redis-service !!
+- 
+
+
