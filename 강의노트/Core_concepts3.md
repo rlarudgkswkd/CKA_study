@@ -102,3 +102,4 @@ kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=cl
 - 내부적으로 어떻게 작동하는지 보자
 - 명령어에서 개체가 존재하지 않으면 생성하는 식인데 실제 로컬 yaml로 생성하는 거랑 k8s에서 생성되서 저장된 방식이 다름. (명령어로 쓴거말고 실행하기 위한 내용들이 추가로 더해짐)
 - json 형태로 last applied configuration이 있는데 이거랑 항상 비교해서 업데이트 시킴
+- JSON 내용은 live object configuratioon k8s 안에 있음
