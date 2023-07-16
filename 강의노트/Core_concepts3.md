@@ -89,6 +89,10 @@ kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=cl
   - expose : kubectl expose pod nginx --type=NodePort --port=80
   - create
 - kubectl expose pod redis --port 6379 --name redis-service !!
-- 
+- kubectl create deployment webapp --image=kodekloud/webapp-color --replicas=3
+- kubectl create pod custom-nginx --image=nginx --port=8080
+- kubectl create namespace dev-ns
+- kubectl create deployment redis-deploy --image=redis --replicas=2 -n dev-ns
+- kubectl run pod httpd --image=httpd:alpine --expose=true --port=80
 
 
