@@ -15,4 +15,15 @@
   - 바인딩 객체를 생성해서 바인딩 API 게시 요청을 보내는것.
  
 ## Practice Test - Manual Scheduling
-- 
+- 1번 문제 스케쥴링이 없는 것에 대한 로그는 어디에서 있는거지?
+  - kubectl get pods --namespace kube-system
+- ---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  nodeName: node01 //위치 기억할것.
+  containers:
+  -  image: nginx
+     name: nginx
