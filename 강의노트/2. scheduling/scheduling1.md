@@ -7,6 +7,7 @@
 - nodeName : 부분이 초기 설정(ex. yaml등)에서 지정 되어 있지않고 create pod 할때 스케줄링 알고리즘이 자동으로 할당됨.
 
 ### No Scheduler
+
 - 스케줄링이 없을 경우 pending 상태 유지됨.
 - 없는 경우 업떻게 할당해줄까?
   - nodeName : 여기에 value 할당
