@@ -101,3 +101,22 @@ kubectl get pods --selector app=App1
   ```
   kubectl taint nodes node1 app=blue:NoSchedule
   ```
+
+### Tolerations - PODs
+- 위에 설정 내용을 pod 생성시 넣음.
+  ```
+  apiVersion:
+  kind: Pod
+  metadata:
+    name: myapp-pod
+  spec:
+    containers:
+    - name: nginx-container
+      image: nginx
+    tolerations:
+    - key: "app"
+      operator: "Equal"
+      value: " blue"
+      effect: " NoSchedule "
+  
+  ```
