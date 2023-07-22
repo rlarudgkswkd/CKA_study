@@ -85,5 +85,15 @@ kubectl get pods --selector app=App1
 
 ## Taints and Tolerations
 
-- taints and tolerations 관계 벌레A와 벌레B가 사람에게 접근하려고 할때.
+- taints and tolerations 관계 벌레A와 벌레B가 사람에게 접근하려고 할때로 비육 가능 ㅋㅋ
   - 한 노드에 어떤 포드로 스케쥴리할수 있는지 제한을 설정하기 위해 사용됨.
+- 두가지 방법이 있음
+  - 노드에 taint를 주든지
+  - 특정 파드에 toleration을 주든
+
+### Taints - Node
+- kubectl taint nodes node-name key=value:taint-effect
+  - effect
+    - NoSchedule
+    - PreferNoSchedule
+    - NoExecute
