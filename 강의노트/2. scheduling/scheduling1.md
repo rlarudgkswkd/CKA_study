@@ -80,3 +80,9 @@ kubectl get pods --selector app=App1
   - k get all --selector env=prod
 - 4번 문제 : k get pod --selector env=prod,bu=finance,tier=frontend
 - 결과값 세기 : k get pods --selector env=dev | wc -l
+
+---
+
+## Taints and Tolerations
+
+- 
