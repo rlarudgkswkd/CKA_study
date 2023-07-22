@@ -85,4 +85,5 @@ kubectl get pods --selector app=App1
 
 ## Taints and Tolerations
 
-- 
+- taints and tolerations 관계 벌레A와 벌레B가 사람에게 접근하려고 할때.
+  - 한 노드에 어떤 포드로 스케쥴리할수 있는지 제한을 설정하기 위해 사용됨.
