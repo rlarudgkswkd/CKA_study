@@ -118,5 +118,7 @@ kubectl get pods --selector app=App1
       operator: "Equal"
       value: " blue"
       effect: " NoSchedule "
-  
   ```
+
+### Taint - NoExecute
+- 이미 Node1에 pod C,D가 배정된 상태에서 Node1에 taint를 추가하고 pod c에 toleration을 추가하면 D가 쫓겨남.
