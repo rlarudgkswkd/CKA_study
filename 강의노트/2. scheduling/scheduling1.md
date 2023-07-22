@@ -35,4 +35,27 @@ spec:
 ---
 
 ## Labels and Selectors
+- 그룹으로 묵는 표준 방법임. ex. 종별로 묶는것
+- 필요에 따라 물건을 분류하고 묶는 방법이 필요한데 그때 Labels 사용하는 것.
 
+### Labels & Selectors in K8s
+- k8s에는 object가 다 달라짐.
+- 수백 수천개가 되면 그룹별로 봐야함. ex. app별, 기능 별 등
+
+### Labels
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-webapp
+  labels:
+    app: App1
+    function: Front-end
+
+spec:
+  containers:
+  - name: simple-webapp
+    image: simple-webapp
+    ports:
+      - containerPort: 8080
+```
