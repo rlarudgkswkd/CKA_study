@@ -128,3 +128,12 @@ kubectl get pods --selector app=App1
   ```
   kubectl describe node kubemaster | grep Taint
   ```
+
+---
+
+## Practical Test - Taints and Tolerations
+
+```
+k taint nodes node01 spray=mortein:NoSchedule
+k describe node node01 | grep Taint
+```
