@@ -76,6 +76,7 @@ kubectl get pods --selector app=App1
 ## Practice Test - Labels and Selectors
 
 - k get pods --selector env=dev
-- !! 3번 문제 확인 필요 : 내가 낸 답 k get all --selector env=prod
+- !! 3번 문제 확인 필요 : 내가 낸 답
+  - k get all --selector env=prod
 - 4번 문제 : k get pod --selector env=prod,bu=finance,tier=frontend
 - 결과값 세기 : k get pods --selector env=dev | wc -l
