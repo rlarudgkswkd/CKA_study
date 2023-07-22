@@ -156,3 +156,8 @@ spec:
     operator: "Equal"
     effect: "NoSchedule"
 ```
+
+- 지우기
+  ```
+  k taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
+  ```
