@@ -122,3 +122,9 @@ kubectl get pods --selector app=App1
 
 ### Taint - NoExecute
 - 이미 Node1에 pod C,D가 배정된 상태에서 Node1에 taint를 추가하고 pod c에 toleration을 추가하면 D가 쫓겨남.
+
+### master node에는 pod가?
+- master node에는 스케쥴러가 pod를 생성하지 못하게 되어있음. 최초로 바로 taint가 설정됨. NoSchedule로
+  ```
+  kubectl describe node kubemaster | grep Taint
+  ```
