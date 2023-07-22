@@ -31,3 +31,8 @@ spec:
      name: nginx
 
 - pending state 내용 : Node 가 NONE 으로 할당 되어 있어서
+- kubectl get pods -o wide : 어느 노드에 할당되었는지도 확인 가능
+---
+
+## Labels and Selectors
+
