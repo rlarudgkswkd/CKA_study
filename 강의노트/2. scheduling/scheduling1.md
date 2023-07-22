@@ -137,3 +137,22 @@ kubectl get pods --selector app=App1
 k taint nodes node01 spray=mortein:NoSchedule
 k describe node node01 | grep Taint
 ```
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bee
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+  tolerations:
+  - key: "spray"
+    value: "mortein"
+    operator: "Equal"
+    effect: "NoSchedule"
+```
