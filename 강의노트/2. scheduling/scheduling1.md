@@ -70,3 +70,9 @@ kubectl get pods --selector app=App1
 
 ### Annotations
 - 주석 같은 느낌으로 사용 가능
+
+---
+
+## Practice Test - Labels and Selectors
+
+- 
