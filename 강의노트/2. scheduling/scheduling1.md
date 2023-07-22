@@ -59,3 +59,14 @@ spec:
     ports:
       - containerPort: 8080
 ```
+
+### Select
+```
+kubectl get pods --selector app=App1
+```
+
+### Replicaset
+- replicaset 의 labels와 복제 대상의 labels를 혼동하지 말것.
+
+### Annotations
+- 주석 같은 느낌으로 사용 가능
