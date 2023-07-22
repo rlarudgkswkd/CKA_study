@@ -29,3 +29,5 @@ spec:
   containers:
   -  image: nginx
      name: nginx
+
+- pending state 내용 : Node 가 NONE 으로 할당 되어 있어서
