@@ -97,3 +97,7 @@ kubectl get pods --selector app=App1
     - NoSchedule
     - PreferNoSchedule
     - NoExecute
+- 예시
+  ```
+  kubectl taint nodes node1 app=blue:NoSchedule
+  ```
