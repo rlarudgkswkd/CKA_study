@@ -4,6 +4,7 @@
 - 직접 파드를 스케쥴링 하고 싶을 경우
 
 ### How scheduling works
+
 - nodeName : 부분이 초기 설정(ex. yaml등)에서 지정 되어 있지않고 create pod 할때 스케줄링 알고리즘이 자동으로 할당됨.
 
 ### No Scheduler
