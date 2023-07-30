@@ -18,6 +18,7 @@
 
  
 ## Practice Test - Manual Scheduling
+
 - 1번 문제 스케쥴링이 없는 것에 대한 로그는 어디에서 있는거지?
   - kubectl get pods --namespace kube-system
 - ---
