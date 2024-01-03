@@ -164,3 +164,7 @@ spec:
   ```
   k taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
   ```
+
+## Node Selectors
+
+## Node Affinity
