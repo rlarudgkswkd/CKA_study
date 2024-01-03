@@ -170,4 +170,8 @@ spec:
 ## Node Affinity
 
 ## Node Affinity - Practical Test
+```
+k label nodes node01 color=blue // label을 node에 추가
+k get nodes --show-labels //전체 label 확인
+```
 
