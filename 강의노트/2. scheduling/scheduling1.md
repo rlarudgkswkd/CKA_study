@@ -168,3 +168,6 @@ spec:
 ## Node Selectors
 
 ## Node Affinity
+
+## Node Affinity - Practical Test
+
