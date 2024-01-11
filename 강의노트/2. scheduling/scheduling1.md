@@ -202,3 +202,8 @@ spec:
       - name: nginx
         image: nginx
 ```
+
+```
+# deployment 만들기
+kubectl create deployment blue --image=nginx --replicas=3
+```
