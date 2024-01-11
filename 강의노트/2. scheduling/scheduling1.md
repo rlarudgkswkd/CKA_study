@@ -213,6 +213,13 @@ kubectl create deployment blue --image=nginx --replicas=3
 kubectl edit deployment blue
 ```
 
+```
+kubectl create deployment red --image=nginx --replicas=2 --dry-run=client -o yaml
+kubectl create deployment red --image=nginx --replicas=2 --dry-run=client -o yaml > red.yaml
+vi red.yaml
+```
+
 ### vi command
 - dragging : on esc, press captial V (which is shift + v) you can drag with arrow button
 - indenting : on esc with dragging the content, press shift + . -> you can indent the content area
+
