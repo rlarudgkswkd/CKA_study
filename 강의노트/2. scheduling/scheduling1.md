@@ -286,4 +286,6 @@ k get daemonsets
 
 ```
 k get ds 로 해도됌
+k create deployment elasticsearch -n kube-system --image={{이미지 이름}} --dry-run=client -o yaml > fluentd.yaml
+만든 뒤에 DaemonSets 형식으로 바꾸기
 ```
