@@ -246,4 +246,8 @@ spec:
         memory: "2Gi"
         cpu: 2
 ```
+### CPU
 - Request O , No limits -> ideal but watch out for the other pods setting
+
+### MEMORY
+- 
