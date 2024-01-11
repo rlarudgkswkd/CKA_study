@@ -260,4 +260,4 @@ spec:
 
 ## Daemon sets 
 - One copy of pod is always presents in all nodes in the cluster
-
+- use case : Monitoring Agent, Logs Viewer
