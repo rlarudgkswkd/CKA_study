@@ -258,3 +258,6 @@ spec:
 - hard way to set a limit
 ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/76c8b89c-4c3e-470e-9930-17fbed63fdf3)
 
+## Daemon sets 
+- One copy of pod is always presents in all nodes in the cluster
+
