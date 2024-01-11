@@ -229,14 +229,20 @@ vi red.yaml
 
 ```
 apiVersion: v1 kind: Pod metadata:
-name: simple-webapp-color labels:
-name: simple-webapp-color spec:
-containers:
-- name: simple-webapp-color image: simple-webapp-color ports:
-- containerPort: 8080
-resources:
-requests:
-memory:
-"4Gi"
-сри: 2
+  name: simple-webapp-color
+  labels:
+    name: simple-webapp-color
+spec:
+  containers:
+  - name: simple-webapp-color
+    image: simple-webapp-color
+    ports:
+    - containerPort: 8080
+    resources:
+      requests:
+        memory: "1Gi"
+        срu: 1
+      limits:
+        memory: "2Gi"
+        cpu: 2
 ```
