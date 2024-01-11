@@ -283,3 +283,7 @@ k get daemonsets
 
 ### How does it work
 - NodeAffinity
+
+```
+k get ds 로 해도됌
+```
