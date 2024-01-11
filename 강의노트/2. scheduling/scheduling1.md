@@ -207,3 +207,8 @@ spec:
 # deployment 만들기
 kubectl create deployment blue --image=nginx --replicas=3
 ```
+
+```
+# deployment edit
+kubectl edit deployment blue
+```
