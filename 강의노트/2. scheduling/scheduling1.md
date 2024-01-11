@@ -260,4 +260,26 @@ spec:
 
 ## Daemon sets 
 - One copy of pod is always presents in all nodes in the cluster
-- use case : Monitoring Agent, Logs Viewer
+- use case : Monitoring Agent, Logs Viewer, Networking
+
+```
+apiversion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: monitoring-daemon
+spec:
+  selector:
+matchLabels:
+app: monitoring-agent template:
+metadata:
+labels:
+app: monitoring-agent spec:
+containers:
+- name: monitoring-agent image: monitoring-agent
+```
+```
+k get daemonsets
+```
+
+### How does it work
+- NodeAffinity
