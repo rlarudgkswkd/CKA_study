@@ -250,4 +250,7 @@ spec:
 - Request O , No limits -> ideal but watch out for the other pods setting
 
 ### MEMORY
-- 
+
+### Default set
+![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/78f9b989-0124-46e7-ba31-b7859eea198d)
+
