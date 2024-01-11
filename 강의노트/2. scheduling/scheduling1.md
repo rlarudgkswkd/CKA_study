@@ -227,3 +227,16 @@ vi red.yaml
 
 ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/728ab9df-91cf-4d22-813a-19adfac36b83)
 
+```
+apiVersion: v1 kind: Pod metadata:
+name: simple-webapp-color labels:
+name: simple-webapp-color spec:
+containers:
+- name: simple-webapp-color image: simple-webapp-color ports:
+- containerPort: 8080
+resources:
+requests:
+memory:
+"4Gi"
+сри: 2
+```
