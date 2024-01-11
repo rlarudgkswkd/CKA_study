@@ -223,3 +223,7 @@ vi red.yaml
 - dragging : on esc, press captial V (which is shift + v) you can drag with arrow button
 - indenting : on esc with dragging the content, press shift + . -> you can indent the content area
 
+## Resource Requirements and Limits
+
+![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/728ab9df-91cf-4d22-813a-19adfac36b83)
+
