@@ -212,3 +212,7 @@ kubectl create deployment blue --image=nginx --replicas=3
 # deployment edit
 kubectl edit deployment blue
 ```
+
+### vi command
+- dragging : on esc, press captial V (which is shift + v) you can drag with arrow button
+- indenting : on esc with dragging the content, press shift + . -> you can indent the content area
