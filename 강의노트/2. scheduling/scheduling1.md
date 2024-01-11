@@ -175,3 +175,30 @@ k label nodes node01 color=blue // label을 node에 추가
 k get nodes --show-labels //전체 label 확인
 ```
 
+### requiredDuringSchedulingIgnoredDuringExecution 사용과 operator사용
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: red
+spec:
+  selector:
+    matchLabels:
+      app: store
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: store
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: node-role.kubernetes.io/control-plane
+                operator: Exists
+      containers:
+      - name: nginx
+        image: nginx
+```
