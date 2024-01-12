@@ -289,3 +289,9 @@ k get ds 로 해도됌
 k create deployment elasticsearch -n kube-system --image={{이미지 이름}} --dry-run=client -o yaml > fluentd.yaml
 만든 뒤에 DaemonSets 형식으로 바꾸기
 ```
+
+## Static pods
+- 만약 kube-scheudler, master node 등 아무것도 없이 kubelet 과 하나의 node만 있으면?
+- kube-apiserver도 없고 하기에 다른 방식으로 만들어야함.
+- directory에 yaml 넣고 create 해야함.
+- replicaset이나 deployment 등 할수 없음.
