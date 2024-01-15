@@ -295,3 +295,8 @@ k create deployment elasticsearch -n kube-system --image={{이미지 이름}} --
 - kube-apiserver도 없고 하기에 다른 방식으로 만들어야함.
 - directory에 yaml 넣고 create 해야함.
 - replicaset이나 deployment 등 할수 없음.
+
+```
+## kubelet 설정 보는 거
+ps -aux | grep kubelet
+```
