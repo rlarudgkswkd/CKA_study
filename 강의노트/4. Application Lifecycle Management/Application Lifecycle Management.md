@@ -11,7 +11,7 @@ kubectl run webapp-green --image=kodekloud/webapp-color -- --color green
 ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/d0074cb5-b6f1-4403-9b00-a2ac00476834)
 
 ## Configuring ConfigMaps in Applications
-- create
+### create
   - imperative
   ```
   kubectl create configmap
@@ -24,4 +24,5 @@ kubectl run webapp-green --image=kodekloud/webapp-color -- --color green
   ```
   ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/8d4aa259-1f0d-45dd-836e-5184eb2749c5)
 
-- inject the configMap
+### inject the configMap
+
