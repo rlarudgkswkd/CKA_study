@@ -15,6 +15,8 @@ kubectl run webapp-green --image=kodekloud/webapp-color -- --color green
   - imperative
   ```
   kubectl create configmap
+  kubectl get configmap
+  kubectl describe configmaps
   ```
   ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/b86b498f-93d0-4997-8f70-44a80a969706)
 
@@ -24,5 +26,7 @@ kubectl run webapp-green --image=kodekloud/webapp-color -- --color green
   ```
   ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/8d4aa259-1f0d-45dd-836e-5184eb2749c5)
 
-### inject the configMap
+### ConfigMap in Pods(inject the configMap)
+![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/d7755076-51ee-4f15-b6fa-90143f717794)
+
 
