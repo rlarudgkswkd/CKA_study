@@ -300,3 +300,5 @@ k create deployment elasticsearch -n kube-system --image={{이미지 이름}} --
 ## kubelet 설정 보는 거
 ps -aux | grep kubelet
 ```
+
+
