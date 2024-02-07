@@ -23,4 +23,11 @@ cat /proc/sys/net/ipv4/ip_forward
 - 그러나 이렇게 할때 여러개의 서버가 생겨버리면 관리하기가 어려워짐. 이거를 한개의 서버로 관리하자는게 DNS 서버임.
 
 ### DNS 서버
-- 
+
+### Domain Names
+
+### nslookup
+- ping으로 DNS 체크하는것보다 나음
+- dig
+
+## Prerequisite - Network Namespaces
