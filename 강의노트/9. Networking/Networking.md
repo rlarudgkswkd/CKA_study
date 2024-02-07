@@ -78,4 +78,35 @@ netstat -npl | grep -i scheduler
 netstat -npa | grep -i etcd | grep -i 2379 | wc -l
 netstat -npa | grep -i etcd | grep -i 2380 | wc -l
 ```
+## Pod Networking
+
+### setting network
+- ip link add v-net-o type bridge
+- ip link set dev v-net-o up
+- ip addr add 10.244.1.1/24 dev v-net-o
+
+### Script
+```Script.sh
+# Create veth pair
+ip link add ....
+
+# Attach veth pair
+ip link set ....
+ip link set ....
+
+# Assign IP Address
+ip -n <namespace> addr add ....
+ip -n <namespace> route add ....
+
+# Bring up Interface
+ip -n <namespace> link set ....
+```
+
+### 다른 노드에 있는 pod와 연결
+- A파드에서 B로 ping
+  - ping 10.244.2.2 -> network is unreachable
+- 속한 노드1로
+  - ip route add 10.244.2.2 via 192.168.1.12 (B가 속한 노드2의 ip)
+  - ping 10.244.2.2 이제 됨
+
 
