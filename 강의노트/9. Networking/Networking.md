@@ -58,3 +58,9 @@ cat /proc/sys/net/ipv4/ip_forward
 
 ### LINUX BRDIGE
 - switch
+
+## Prerequisite - Docker Networking
+### None
+### HOST
+### Bridge
+- 
