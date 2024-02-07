@@ -65,5 +65,11 @@ cat /proc/sys/net/ipv4/ip_forward
 ### Bridge
 
 ## PRACTICE TEST – EXPLORE ENVIRONMENT
-
+```
+ip a
+ip link
+ip route show default
+ip address show eth0
+ip address show type bridge
+```
 
