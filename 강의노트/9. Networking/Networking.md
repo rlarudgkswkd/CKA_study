@@ -63,4 +63,7 @@ cat /proc/sys/net/ipv4/ip_forward
 ### None
 ### HOST
 ### Bridge
-- 
+
+## PRACTICE TEST – EXPLORE ENVIRONMENT
+
+
