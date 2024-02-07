@@ -117,3 +117,8 @@ ip -n <namespace> link set ....
 - ls /opt/cni/bin
 - ls /etc/cni/net.d
   - cat /etc/cni/net.d/10-bridge.conf
+ 
+## Practice Test
+- ps -aux | grep kubelet | grep container-runtime-endpoint
+- ls /opt/cni/bin
+- ls /etc/cni/net.d/
