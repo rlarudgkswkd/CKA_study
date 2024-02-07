@@ -31,3 +31,17 @@ cat /proc/sys/net/ipv4/ip_forward
 - dig
 
 ## Prerequisite - Network Namespaces
+
+### Create Network NS
+- ip netns add red
+- ip netns add blue
+- ip netns
+
+### EXEC IN NETWORK NS
+- ip link
+  - ip netns exec red ip link
+  - ip -n red link
+- arp
+  - ip netns exec red arp
+- route
+  - ip netns exec red route
