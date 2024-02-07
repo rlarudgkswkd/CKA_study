@@ -71,5 +71,11 @@ ip link
 ip route show default
 ip address show eth0
 ip address show type bridge
+netstat --help
+netstat -l
+netstat | grep -i scheduler
+netstat -npl | grep -i scheduler
+netstat -npa | grep -i etcd | grep -i 2379 | wc -l
+netstat -npa | grep -i etcd | grep -i 2380 | wc -l
 ```
 
