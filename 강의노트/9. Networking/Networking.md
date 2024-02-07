@@ -45,3 +45,13 @@ cat /proc/sys/net/ipv4/ip_forward
   - ip netns exec red arp
 - route
   - ip netns exec red route
+ 
+### create the cable between red and blue
+- ip link add veth-red type veth peer name veth-blue
+- ip link set veth-red netns red
+- ip link set veth-blue netns blue
+- ip -n red addr add 192.168.15.1 dev veth-red
+- ip -n blue addr add 192.168.15.2 dev veth-blue
+- ip -n red link set 192.168.15.1 veth-red up
+- ip -n blue link set 192.168.15.1 veth-blue up
+- 등등
