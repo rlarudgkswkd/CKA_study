@@ -55,3 +55,6 @@ cat /proc/sys/net/ipv4/ip_forward
 - ip -n red link set 192.168.15.1 veth-red up
 - ip -n blue link set 192.168.15.1 veth-blue up
 - 등등
+
+### LINUX BRDIGE
+- switch
