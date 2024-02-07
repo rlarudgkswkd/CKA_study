@@ -15,3 +15,12 @@ ip route
 ip route add 192.168.1.0/24 via 192.168.2.1
 cat /proc/sys/net/ipv4/ip_forward
 ```
+## Prerequisite - DNS
+- ping을 ip로만 보내다가 db라는 이름으로 보내려면 못참을거임
+- 그럴때 cat /etc/hosts 를 볼것.
+  - 192.168.1.11 db를 추가하고 저장하면 됨.
+  - ping db 되는거 확인
+- 그러나 이렇게 할때 여러개의 서버가 생겨버리면 관리하기가 어려워짐. 이거를 한개의 서버로 관리하자는게 DNS 서버임.
+
+### DNS 서버
+- 
