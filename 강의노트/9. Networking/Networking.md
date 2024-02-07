@@ -109,4 +109,11 @@ ip -n <namespace> link set ....
   - ip route add 10.244.2.2 via 192.168.1.12 (B가 속한 노드2의 ip)
   - ping 10.244.2.2 이제 됨
 
+## CNI in kubernetes
+- CNI는 container runtime에 책임이 있음
 
+### Configuring CNI
+- kubelet에서 돔
+- ls /opt/cni/bin
+- ls /etc/cni/net.d
+  - cat /etc/cni/net.d/10-bridge.conf
