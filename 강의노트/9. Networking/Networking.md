@@ -122,3 +122,6 @@ ip -n <namespace> link set ....
 - ps -aux | grep kubelet | grep container-runtime-endpoint
 - ls /opt/cni/bin
 - ls /etc/cni/net.d/
+
+## Practice Test - Service Network
+- cat /etc/kubernetes/manifests/kube-apiserver.yaml | grep service-cluster-ip-range
