@@ -125,3 +125,19 @@ ip -n <namespace> link set ....
 
 ## Practice Test - Service Network
 - cat /etc/kubernetes/manifests/kube-apiserver.yaml | grep service-cluster-ip-range
+
+## CoreDNS in K8s
+### Kube-dns
+- cat /etc/resolv.conf -> DNS 주소가 각 파드별로 등록됨. /etc/host 대체 느낌.
+### Core-DNS
+- 2개로 배포됨.
+- cat /etc/coredns/Corefile
+- kubectl get configmap -n kube-system
+- kubectl get service -n kube-system -> kube-dns
+  ```
+  ## 모든 주소가 같은 곳을 가리킴
+  curl http://web-service
+  curl http://web-service.default
+  curl http://web-service.default.svc
+  curl http://web-service.default.svc.cluster.local
+  ```
