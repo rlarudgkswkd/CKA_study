@@ -14,3 +14,4 @@
 - 두개는 병렬적인 처리가 아니라 leader election 처리를 함. 한번에 하나만 active 되서 동시성 보장.
 - External ETCD Topology
   - 별도 서버로 빼버리는 거임.
+![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/361b83d6-f1c8-45fc-93b0-9ed712e87f3b)
