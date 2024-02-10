@@ -15,3 +15,14 @@
 - External ETCD Topology
   - 별도 서버로 빼버리는 거임.
 ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/361b83d6-f1c8-45fc-93b0-9ed712e87f3b)
+
+## ETCD In HA
+- what is etcd
+  - 분산 처리된 key value store
+- 3중 되어있을경우 어떻게 될까?
+  - write일 경우 leader election 전략 취함
+- 리더는 어케 뽑음?
+  - Leader Election -RAFT : 타임 돌때마다 리더가 바뀜
+- quorum = n/2 + 1
+  - quorum of 3 = 3/2 + 1 = 2.5~ = 2
+  - quorum of 5 = 5/2 + 1 = 3.5~ = 3
