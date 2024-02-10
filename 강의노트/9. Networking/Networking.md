@@ -152,5 +152,8 @@ ip -n <namespace> link set ....
     - error-log-path
     - keep alive
     - ssl protocols
+  - Service : nginx-ingress , NodePort (외부 통신용)
   - ServiceAccount : nginx-ingress-serviceaccount
-  - Service : nginx-ingress 
+ 
+### Ingress Resource
+
