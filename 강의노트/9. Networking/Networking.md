@@ -184,4 +184,41 @@ spec:
 - 11번
 
 ## Ingress Practice Test 2
-
+- 7번
+  ```
+  apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx-ingress.kubernetes.io/ssl-redirect: "false"
+    ## 이게 추가되서 해결됨
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  creationTimestamp: "2024-02-10T13:16:04Z"
+  generation: 1
+  name: ingress-wear-watch
+  namespace: app-space
+  resourceVersion: "2387"
+  uid: c2a516b5-aa0e-4f1a-83ad-ff2f82303bf4
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: wear-service
+            port:
+              number: 8080
+        path: /wear
+        pathType: Exact
+      - backend:
+          service:
+            name: video-service
+            port:
+              number: 8080
+        path: /watch
+        pathType: Exact
+status:
+  loadBalancer:
+    ingress:
+    - ip: 10.98.161.59
+  ```
