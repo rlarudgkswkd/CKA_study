@@ -180,4 +180,8 @@ spec:
   1. rule 1개 path 2개
   2. rule 2개
 
+## Ingress Practice Test 1
+- 11번
+
+## Ingress Practice Test 2
 
