@@ -141,3 +141,11 @@ ip -n <namespace> link set ....
   curl http://web-service.default.svc
   curl http://web-service.default.svc.cluster.local
   ```
+
+
+## Ingress
+- 여러가지 ingress-controller 존재
+- nginx 관련해서 볼거임
+- ingress 설정을 위해 2가지 필요
+  - ingress-controller -> deploy
+  - configuration file -> configmap
