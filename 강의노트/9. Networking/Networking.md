@@ -156,4 +156,18 @@ ip -n <namespace> link set ....
   - ServiceAccount : nginx-ingress-serviceaccount
  
 ### Ingress Resource
+- ingress-controller 관련된 규칙을 관리함.
+  - url 이나 route 등
+- ingress-wear.yaml
+```
+apiVersion: extensions/v1betal
+kind: Ingress
+metadata:
+  name: ingress-wear
+spec:
+  backend:
+    serviceName: wear-service
+    servicePort: 80
+```
+- kubectl get ingress
 
