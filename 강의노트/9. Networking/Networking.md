@@ -146,6 +146,11 @@ ip -n <namespace> link set ....
 ## Ingress
 - 여러가지 ingress-controller 존재
 - nginx 관련해서 볼거임
-- ingress 설정을 위해 2가지 필요
-  - ingress-controller -> deploy
-  - configuration file -> configmap
+- ingress 설정을 위해 3가지 필요
+  - ingress-controller : nginx-ingress-controller deploy
+  - configuration file : configmap
+    - error-log-path
+    - keep alive
+    - ssl protocols
+  - ServiceAccount : nginx-ingress-serviceaccount
+  - Service : nginx-ingress 
