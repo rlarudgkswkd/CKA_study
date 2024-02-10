@@ -170,4 +170,7 @@ spec:
     servicePort: 80
 ```
 - kubectl get ingress
+- 404 page도 설정 가능
+  ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/7133b237-9c8f-43bf-bf71-88e153f3e15d)
+
 
