@@ -191,7 +191,6 @@ kind: Ingress
 metadata:
   annotations:
     nginx-ingress.kubernetes.io/ssl-redirect: "false"
-    ## 이게 추가되서 해결됨
     nginx.ingress.kubernetes.io/rewrite-target: /
   creationTimestamp: "2024-02-10T13:16:04Z"
   generation: 1
@@ -222,3 +221,5 @@ status:
     ingress:
     - ip: 10.98.161.59
   ```
+- 이게 추가되서 해결됨
+  - nginx-ingress.kubernetes.io/ssl-redirect: "false"
