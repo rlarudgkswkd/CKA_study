@@ -176,4 +176,8 @@ spec:
 - 404 page도 설정 가능
 ![image](https://github.com/rlarudgkswkd/CKA_study/assets/48428850/7133b237-9c8f-43bf-bf71-88e153f3e15d)
 
+- 두가지 종류 존재
+  1. rule 1개 path 2개
+  2. rule 2개
+
 
