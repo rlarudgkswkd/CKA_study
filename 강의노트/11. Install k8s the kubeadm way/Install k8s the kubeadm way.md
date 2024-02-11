@@ -8,5 +8,6 @@
 4. set the pod network
 5. join the worker node to the master node
 
-### Cgroup
+## Setting up
+- https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 - ```ps -p 1```
