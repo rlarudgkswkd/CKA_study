@@ -17,3 +17,10 @@
   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config      
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
   ```
+- installing addons
+  ```
+  kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+Reference links: -
+https://www.weave.works/docs/net/latest/kubernetes/kube-addon/#-installation
+https://github.com/weaveworks/weave/releases
+  ```
