@@ -11,3 +11,9 @@
 ## Setting up
 - https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 - ```ps -p 1```
+- kubeadm init
+- ```
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config      
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+  ```
