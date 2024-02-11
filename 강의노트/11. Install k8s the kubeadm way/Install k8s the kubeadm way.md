@@ -7,3 +7,6 @@
 3. initialize the master server
 4. set the pod network
 5. join the worker node to the master node
+
+### Cgroup
+- ```ps -p 1```
