@@ -33,3 +33,32 @@ k replace --force -f /tmp/kubectl-edit-3195977508.yaml
 - sudo journalctl -u kubelet
 - openssl x509 -n /var/lib/kublet/worker-1.crt -text
 - 각 노드별로 있는 cat /var/lib/kubelet/config.yaml
+
+## Worker Node Failure - Practice Test
+### Quiz 1
+- ssh node01
+- service kubelet status
+- service kubelet start
+### Quiz 2
+- kubectl describe node node01
+- ssh node01
+- service kubelet status
+- service kubelet start
+- service kubelet status
+- journalctl -u kubelet -> 제일 나중로그보기
+- find unable to load client CA file
+- cat /etc/kubernetes/kubelet.conf
+- ls /var/lib/kubelet
+- cat /var/lib/kubelet/config.yaml
+  - find wrong path and edit it
+- service kubelet restart
+### Quiz 3
+- ssh node01
+- service kubelet status
+- journalctl -u kubelet -> 제일 나중 로그
+  - unable to register node
+  - wrong port
+- cat /etc/kubernetes/kubelet.conf
+- vi /etc/kubernetes/kubelet.conf -> 포트 수정
+- service kubelet restart
+- exit k get node
