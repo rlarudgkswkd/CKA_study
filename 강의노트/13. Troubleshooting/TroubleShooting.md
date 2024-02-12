@@ -27,3 +27,9 @@ k replace --force -f /tmp/kubectl-edit-3195977508.yaml
 ## Worker Node Failure
 - kubectl get nodes
 - k describe node worker-1
+- top
+- df -h
+- service kubelet status
+- sudo journalctl -u kubelet
+- openssl x509 -n /var/lib/kublet/worker-1.crt -text
+- 각 노드별로 있는 cat /var/lib/kubelet/config.yaml
