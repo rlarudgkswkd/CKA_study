@@ -23,3 +23,7 @@ k replace --force -f /tmp/kubectl-edit-3195977508.yaml
 ## Controlplane Failure Practice test
 - cd /etc/kubernetes/manifests 하위 경로 파일 수정
 - replicaset 관련 역할은 kube-controller가 진행함.
+
+## Worker Node Failure
+- kubectl get nodes
+- k describe node worker-1
