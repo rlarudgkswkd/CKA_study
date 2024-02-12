@@ -62,3 +62,27 @@ k replace --force -f /tmp/kubectl-edit-3195977508.yaml
 - vi /etc/kubernetes/kubelet.conf -> 포트 수정
 - service kubelet restart
 - exit k get node
+
+## Network Troubleshooting
+```
+- weave net
+kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+
+- flannel
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/2140ac876ef134e0ed5af15c65e414cf26827915/Documentation/kube-flannel.yml
+
+- Calico
+curl https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml -O
+
+Apply the manifest using the following command.
+
+kubectl apply -f calico.yaml
+
+proxy . /etc/resolv.conf
+
+
+
+```
+
+- https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/
+- https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
