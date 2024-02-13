@@ -22,3 +22,7 @@
 - k get nodes -o=custom-columns=NODE:.metadata.name, CPU: .status.capacity.cpu
 - k get nodes --sort-by= .metadata.name
 - k get nodes --sort-by= .status.capacity.cpu
+
+
+### Search
+- k config view --kubeconfig=my-kube-config -o jsonpath="{.contexts[?(@.context.user=='aws-user')].name}"
